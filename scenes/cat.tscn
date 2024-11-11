@@ -1,17 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://63cryeeanhoh"]
+[gd_scene load_steps=4 format=3 uid="uid://63cryeeanhoh"]
 
 [ext_resource type="Texture2D" uid="uid://i3bpvd5rg078" path="res://icon.svg" id="1_xrreo"]
+[ext_resource type="Script" path="res://script/cat.gd" id="1_xswkj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3b8ag"]
 size = Vector2(138, 133)
 
 [node name="cat" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Cat" type="CharacterBody2D" parent="."]
+script = ExtResource("1_xswkj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cat"]
 position = Vector2(-1, -5.5)
 shape = SubResource("RectangleShape2D_3b8ag")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Cat"]
 texture = ExtResource("1_xrreo")
