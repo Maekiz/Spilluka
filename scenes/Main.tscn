@@ -1,3 +1,26 @@
-[gd_scene format=3 uid="uid://dkdxttyi17y15"]
+[gd_scene load_steps=4 format=3 uid="uid://dkdxttyi17y15"]
+
+[ext_resource type="PackedScene" uid="uid://dmjc6f5cpr0ux" path="res://scenes/goal.tscn" id="1_qks8h"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_3rks6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2atm8"]
+size = Vector2(1095, 281)
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Goal" parent="." instance=ExtResource("1_qks8h")]
+position = Vector2(1019, 337)
+scale = Vector2(10, 10)
+
+[node name="Ground" type="Node2D" parent="."]
+position = Vector2(518, 373)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground"]
+position = Vector2(30.5, 135.75)
+scale = Vector2(1091, 272.5)
+texture = SubResource("CanvasTexture_3rks6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(29.5, 135.5)
+shape = SubResource("RectangleShape2D_2atm8")
