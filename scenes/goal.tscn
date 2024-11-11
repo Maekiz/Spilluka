@@ -1,18 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmjc6f5cpr0ux"]
+[gd_scene load_steps=5 format=3 uid="uid://eq5copaoepfv"]
 
-[ext_resource type="Script" path="res://scenes/goal.gd" id="1_ppm6t"]
+[ext_resource type="Script" path="res://script/goal.gd" id="1_cmj63"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mrf7p"]
 radius = 2.0
 height = 6.0
 
-[sub_resource type="Gradient" id="Gradient_thh0p"]
+[sub_resource type="Gradient" id="Gradient_kvca7"]
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_wtib5"]
-gradient = SubResource("Gradient_thh0p")
+gradient = SubResource("Gradient_kvca7")
 
 [node name="Goal" type="Node2D"]
-script = ExtResource("1_ppm6t")
+script = ExtResource("1_cmj63")
 
 [node name="Area2D" type="Area2D" parent="."]
 

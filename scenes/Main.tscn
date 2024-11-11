@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+[gd_scene load_steps=2 format=3 uid="uid://dkdxttyi17y15"]
+
+[ext_resource type="PackedScene" uid="uid://c3ncoh4mt3hl" path="res://scenes/player.tscn" id="1_w52qu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_w52qu")]
+position = Vector2(440, 337)
+=======
 [gd_scene load_steps=4 format=3 uid="uid://dkdxttyi17y15"]
 
 [ext_resource type="PackedScene" uid="uid://dmjc6f5cpr0ux" path="res://scenes/goal.tscn" id="1_qks8h"]
@@ -24,3 +35,9 @@ texture = SubResource("CanvasTexture_3rks6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
 position = Vector2(29.5, 135.5)
 shape = SubResource("RectangleShape2D_2atm8")
+>>>>>>> 5fb86099da46deb4cf22af6ee99cccbc1411b807
+=======
+[gd_scene format=3 uid="uid://dkdxttyi17y15"]
+
+[node name="Node2D" type="Node2D"]
+>>>>>>> parent of 53bebda (nytt raw map)

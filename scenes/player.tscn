@@ -1,13 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3ncoh4mt3hl"]
+[gd_scene load_steps=3 format=3 uid="uid://c3ncoh4mt3hl"]
 
-[ext_resource type="Script" path="res://scenes/player.gd" id="1_mer0m"]
+<<<<<<< HEAD
+[ext_resource type="Script" path="res://script/player.gd" id="1_jxi2t"]
+=======
+>>>>>>> 5fb86099da46deb4cf22af6ee99cccbc1411b807
 [ext_resource type="Texture2D" uid="uid://i3bpvd5rg078" path="res://icon.svg" id="1_x5ims"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_484v3"]
 size = Vector2(94, 34)
 
 [node name="player" type="CharacterBody2D"]
-script = ExtResource("1_mer0m")
+<<<<<<< HEAD
+script = ExtResource("1_jxi2t")
+=======
+>>>>>>> 5fb86099da46deb4cf22af6ee99cccbc1411b807
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(178, 74.25)
